@@ -1,0 +1,281 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#header{
+	background: linear-gradient(to bottom right, #f9336c, #face38);
+	height: 100vh;
+	max-height: 700px;
+	min-height: 350px;
+	text-align: center;
+	display: flex;
+	color: white;
+}
+
+.insist{
+	font-weight: 700;
+}
+
+#title{
+	margin: auto;
+	letter-spacing: 1.5px;
+}
+
+h1{
+	font-size: 46px;
+	font-weight: 200;
+	line-height: 51px;
+	margin-top: 0px;
+}
+
+h2{
+	font-size: 26px;
+	font-weight: 200;
+	line-height: 28px;
+	margin-bottom: 4px;
+}
+
+#btn{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 21.6px;
+	border-radius: 50px;
+	border: 1px solid white;
+	display: inline-block;
+	padding: 12px 25px 12px;
+	margin-top: 15px;
+	transition: 0.3s;
+}
+
+
+
+#btn:hover {
+	background-color: #ffffff;
+	color: #F96F57;
+	text-decoration: none;
+}
+
+
+#mouse-scroll{
+	position: relative;
+	width: 16px;
+    height: 24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    margin: 60px auto 0 auto;
+}
+
+#circle-scroll{
+	width: 2px;
+    height: 2px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    animation-name: scrolling;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes scrolling{
+	25%{height: 8px;}
+	50%{height: 2px; top: 12px; opacity: 0;}
+	100%{height: 2px; top: 12px; opacity: 0;}
+}
+
+
+#description{
+	text-align: justify;
+	font-size: 18px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 0 40px;
+}
+
+#projects {
+	padding: 0 40px;
+	font-size: 18px;
+}
+
+h3 {
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#barre {
+	height: 1px;
+	background-color: #2b2d2e;
+	width: 10%;
+	margin: 0 auto 60px;
+}
+
+#squares1, #squares2 {
+	text-align: center;
+}
+
+.bloc {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	height: 300px;
+	width: 400px;
+	background-color: #2b2d2e;
+	transition: 0.2s;
+}
+
+
+.bloc:hover {
+	transform: translate(0px, -5px);
+	box-shadow: 0 15px 15px 0 rgba(0,0,0,0.4);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2b2d2e;
+}
+
+.bloc:hover .overlay {
+  opacity: 0.8;
+}
+
+figcaption {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+#nolan, #mob {
+	position: relative;
+	right: 20px;
+}
+
+#mob figure {
+	position: relative; 
+}
+
+#mob figure img {
+	position: absolute;
+	right: 0;
+}
+
+#top {
+	animation-name: slider;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+@keyframes slider {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+#nolan img {
+	position: relative;
+	right: 60px;
+}
+
+#coboite img {
+	position: relative;
+	right: 50px;
+	height: 100%;
+}
+
+#coboite, #youboox {
+	position: relative;
+	left: 20px;
+}
+
+#mob, #youboox {
+	position: relative;
+	top: 40px;
+	margin-bottom: 60px;
+}
+
+#footer{
+	background-color: #2b2d2e;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	margin-top: 3em;
+	text-align: center;
+}
+
+#footer a{
+	color: white;
+	font-size: 18px;
+}
+
+
+.list-inline{
+	margin-left: 0px;
+}
+
+.fa{
+	border: 1px solid white;
+	border-radius: 30px;
+	padding: 8px;
+	transition: 0.3s;
+}
+
+.fa:hover{
+	background-color: #ffffff;
+	color: black;
+}
+
+.fa-linkedin{
+	margin: 0 20px;
+}
+
+
+@media (max-width: 992px) {
+	.bloc {
+		display: block;
+		margin: 0 auto;
+	}
+	#nolan, #coboite, #mob, #youboox {
+		position: static;
+	}
+	#nolan, #coboite {
+		margin-bottom: 60px;
+	}
+}
