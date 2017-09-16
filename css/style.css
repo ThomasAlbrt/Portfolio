@@ -95,9 +95,9 @@ h2{
 #description{
 	text-align: justify;
 	font-size: 18px;
+	padding: 0 40px;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	padding: 0 40px;
 }
 
 #projects {
@@ -123,20 +123,15 @@ h4 {
 	margin: 0 auto 60px;
 }
 
-#squares1, #squares2 {
-	text-align: center;
-}
 
 .bloc {
 	position: relative;
-	display: inline-block;
-	overflow: hidden;
+	margin: 0 auto 40px;
 	height: 300px;
-	width: 400px;
-	background-color: #2b2d2e;
+	width: 350px;
+	overflow: hidden;
 	transition: 0.2s;
 }
-
 
 .bloc:hover {
 	transform: translate(0px, -5px);
@@ -144,46 +139,40 @@ h4 {
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #2b2d2e;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #2b2d2e;
 }
 
-.bloc:hover .overlay {
-  opacity: 0.8;
+.overlay:hover {
+	opacity: 0.8;
 }
 
 figcaption {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-
-
-#nolan, #mob {
-	position: relative;
-	right: 20px;
-}
-
-#mob figure {
-	position: relative; 
-}
-
-#mob figure img {
+	color: white;
+	font-size: 20px;
 	position: absolute;
-	right: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.bloc img {
+	transform: translateX(-25px);
+}
+
+#mob img {
+	position: absolute;
 }
 
 #top {
@@ -210,34 +199,13 @@ figcaption {
 }
 
 
-#nolan img {
-	position: relative;
-	right: 60px;
-}
-
-#coboite img {
-	position: relative;
-	right: 50px;
-	height: 100%;
-}
-
-#coboite, #youboox {
-	position: relative;
-	left: 20px;
-}
-
-#mob, #youboox {
-	position: relative;
-	top: 40px;
-	margin-bottom: 60px;
-}
 
 #footer{
 	background-color: #2b2d2e;
 	padding-top: 3em;
 	padding-bottom: 3em;
-	margin-top: 3em;
 	text-align: center;
+	margin-top: 40px;
 }
 
 #footer a{
@@ -266,16 +234,35 @@ figcaption {
 	margin: 0 20px;
 }
 
-
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+	#squares1, #squares2 {
+		text-align: center;
+	}
 	.bloc {
-		display: block;
-		margin: 0 auto;
+		display: inline-block;
+		margin-bottom: 40px;
+		width: 400px;
 	}
-	#nolan, #coboite, #mob, #youboox {
-		position: static;
+	.bloc img {
+		transform: translateX(0);
 	}
-	#nolan, #coboite {
-		margin-bottom: 60px;
+	#nolan, #mob {
+		margin-right: 40px;
+	}
+	
+	#mob figure {
+		text-align: left;
+	}
+
+	#mob figure figcaption {
+		text-align: center;
+	}
+
+	#coboite, #youboox {
+		margin-left: 20px;
+	}
+
+	#youboox, #mob {
+		margin-bottom: 40px;
 	}
 }
