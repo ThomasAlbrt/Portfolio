@@ -91,6 +91,10 @@ h2{
 	100%{height: 2px; top: 12px; opacity: 0;}
 }
 
+.container {
+	padding: 0;
+}
+
 
 #description{
 	text-align: justify;
@@ -123,9 +127,9 @@ h4 {
 	margin: 0 auto 60px;
 }
 
-
 .bloc {
 	position: relative;
+	right: 2px;
 	margin: 0 auto 40px;
 	height: 300px;
 	width: 350px;
@@ -242,6 +246,7 @@ figcaption {
 		display: inline-block;
 		margin-bottom: 40px;
 		width: 400px;
+		right: 0;
 	}
 	.bloc img {
 		transform: translateX(0);
@@ -264,5 +269,14 @@ figcaption {
 
 	#youboox, #mob {
 		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 365px) {
+	.bloc {
+		width: 300px;
+	}
+	.bloc img {
+		transform: translateX(-50px)
 	}
 }
