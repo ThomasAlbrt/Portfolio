@@ -262,4 +262,11 @@ figcaption {
 	}
 }
 
-
+@media (max-width: 365px) {
+	.images {
+		width: 300px;
+	}
+	.bloc img {
+		transform: translateX(-50px)
+	}
+}
