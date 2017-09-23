@@ -128,6 +128,10 @@ h4 {
 }
 
 .bloc {
+	margin: 0 auto;
+}
+
+.images {
 	position: relative;
 	right: 2px;
 	margin: 0 auto 40px;
@@ -137,7 +141,7 @@ h4 {
 	transition: 0.2s;
 }
 
-.bloc:hover {
+.images:hover {
 	transform: translate(0px, -5px);
 	box-shadow: 0 15px 15px 0 rgba(0,0,0,0.4);
 }
@@ -239,36 +243,15 @@ figcaption {
 }
 
 @media (min-width: 992px) {
-	#squares1, #squares2 {
-		text-align: center;
-	}
 	.bloc {
-		display: inline-block;
-		margin-bottom: 40px;
+		width: 50%;
+	}
+	.images {
 		width: 400px;
-		right: 0;
+		position: relative;
 	}
 	.bloc img {
-		transform: translateX(0);
-	}
-	#nolan, #mob {
-		margin-right: 40px;
-	}
-	
-	#mob figure {
-		text-align: left;
-	}
-
-	#mob figure figcaption {
-		text-align: center;
-	}
-
-	#coboite, #youboox {
-		margin-left: 20px;
-	}
-
-	#youboox, #mob {
-		margin-bottom: 40px;
+		transform: translateX(0)
 	}
 }
 
