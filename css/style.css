@@ -99,13 +99,11 @@ h2{
 #description{
 	text-align: justify;
 	font-size: 18px;
-	padding: 0 40px;
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
 
 #projects {
-	padding: 0 40px;
 	font-size: 18px;
 }
 
@@ -255,8 +253,17 @@ figcaption {
 	}
 }
 
+@media (max-width: 768px) {
+	#description {
+		margin: 60px auto;
+	}
+	#projects {
+		margin: 0 auto;
+	}
+}
+
 @media (max-width: 365px) {
-	.bloc {
+	.images {
 		width: 300px;
 	}
 	.bloc img {
