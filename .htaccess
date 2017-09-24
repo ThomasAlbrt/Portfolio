@@ -1,4 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.thomasalibert.com$
-RewriteRule ^(.*) http://thomasalibert.com/$1 [QSA,L,R=301]
