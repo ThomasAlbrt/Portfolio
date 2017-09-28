@@ -229,6 +229,7 @@ figcaption {
 	border-radius: 30px;
 	padding: 8px;
 	transition: 0.3s;
+	width: 36px;
 }
 
 .fa:hover{
